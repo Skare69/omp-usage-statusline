@@ -4,7 +4,7 @@ statusLine:
   preset: custom
   separator: powerline-thin
   leftSegments: [pi, model, mode, collab, path, git, pr, context_pct, cost]
-  rightSegments: [session_name, usage]
+  rightSegments: [usage, session_name]
   segmentOptions:
     model:
       showThinkingLevel: true
