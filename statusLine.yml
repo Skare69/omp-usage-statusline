@@ -1,0 +1,19 @@
+# Add to ~/.omp/agent/config.yml (merge with an existing statusLine: key if present).
+# Segments = omp's `default` preset verbatim, plus the built-in `usage` segment on the right.
+statusLine:
+  preset: custom
+  separator: powerline-thin
+  leftSegments: [pi, model, mode, collab, path, git, pr, context_pct, cost]
+  rightSegments: [session_name, usage]
+  segmentOptions:
+    model:
+      showThinkingLevel: true
+    path:
+      abbreviate: true
+      maxLength: 40
+      stripWorkPrefix: true
+    git:
+      showBranch: true
+      showStaged: true
+      showUnstaged: true
+      showUntracked: true
